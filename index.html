@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Climate Action Pledge</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!--Hero_Section-->
+    <section id="hero">
+      <h1>Take the Climate Action Pledge</h1>
+      <p>Together we can make our planet greener and cleaner.</p>
+      <a href="#pledge-form" class="btn">Take the Pledge</a>
+    </section>
+
+    <!--Live KPIS-->
+    <section id="kpis">
+      <h2>Live Pledge Statistics</h2>
+      <div class="kpisBox">
+        <p><strong>Target Pledges:</strong>1,000,000</p>
+        <p><strong>Achieved:</strong><span id="pledgeCount">0</span></p>
+        <p>
+          <strong>Students:</strong><span id="students">0</span>|
+          <strong>Professionals:</strong><span id="professionals">0</span>|
+          <strong>Workshops:</strong><span id="workShops">0</span>
+        </p>
+      </div>
+    </section>
+
+    <!--Why take Climate Action -->
+    <section id="why">
+      <h2>Why Take Climate Action?</h2>
+      <p>
+        Every small step counts! When individuals pledge for climate friendly
+        habits, we move closer to a sustainable future. Let's inspire change
+        -One pledge at a time.
+      </p>
+    </section>
+
+    <!--Pledge Form-->
+    <section id="pledge-form">
+      <h2>Make Your Pledge</h2>
+      <form id="pledgeForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br />
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" required /><br />
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required /><br />
+
+        <label for="profile">Profile Type:</label>
+        <select id="profile" name="profile">
+          <option value="Student">Student</option>
+          <option value="WorkingProfessional">Working Professional</option>
+          <option value="Other">Others</option></select
+        ><br />
+
+        <h3>Choose Your Commitment.</h3>
+        <p><strong>Theme 1:Energy Saving</strong></p>
+        <input type="checkbox" name="commitment" value="Turn off lights" />Turn
+        off the lights when not in use<br />
+        <input
+          type="checkbox"
+          name="commitment"
+          value="Use public transport"
+        />Use public transport<br />
+        <input type="checkbox" name="commitment" value="Unplug devices" />Unplug
+        unused electronic devices<br />
+
+        <p><strong>Theme 2:Waste Reduction</strong></p>
+        <input type="checkbox" name="commitment" value="Recycle" />Recycle
+        regularly<br />
+        <input type="checkbox" name="commitment" value="Avoid Plastic" />Avoid
+        using plastics<br />
+        <input type="checkbox" name="commitment" value="Compost" /> Compost at
+        home<br />
+
+        <p><strong>Theme 3:Green Lifestyle</strong></p>
+        <input type="checkbox" name="commitment" value="Plant trees" />Plant
+        trees annually<br />
+        <input type="checkbox" name="commitment" value="Save water" />Save water
+        daily<br />
+        <input
+          type="checkbox"
+          name="commitment"
+          value="Support eco products"
+        />Support eco friendly products<br /><br />
+
+        <button type="submit">Submit Pledge</button>
+      </form>
+    </section>
+
+    <!--Certificate generator-->
+    <section id="certificate" style="text-align: center; display: none">
+      <div id="certificate-content" class="certificate-box">
+        <h1>Certificate of Commitment</h1>
+        <h3>Presented to</h3>
+        <h2 id="certName"></h2>
+        <p
+          id="certID"
+          style="font-size: 14px; color: #2e7d32; font-weight: bold"
+        ></p>
+        <p>
+          In recognition of your dedication to environmental sustainability and
+          your pledge to support eco-friendly practices that make our planet
+          greener and healthier — proving that you are cool enough to care.
+        </p>
+
+        <!--  Star section -->
+        <div class="stars" id="starSection">⭐⭐⭐</div>
+
+        <div class="certificate-footer">
+          <div class="left-footer">
+            <p><strong>Deepwoods Organization</strong></p>
+          </div>
+          <div class="right-footer">
+            <p><strong>Authorized</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <button id="downloadCert">Download Certificate (PDF)</button>
+    </section>
+
+    <!--Public pledge wall-->
+    <section id="pledge-wall">
+      <h2>Public Pledge Wall</h2>
+      <table id="pledgeTable" border="1">
+        <thead>
+          <tr>
+            <th>Pledge ID</th>
+            <th>Name</th>
+            <th>Date</th>
+            <th>State</th>
+            <th>Profile</th>
+            <th>Love for the planet</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!--Entries-->
+        </tbody>
+      </table>
+    </section>
+
+    <!--Privacy note-->
+    <section id="privacy">
+      <p>
+        <strong>Privacy Note:</strong>Your mobile number and email are required
+        for validation but never shown publicly. Data is used only for
+        verification and engagement.
+      </p>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

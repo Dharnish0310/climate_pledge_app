@@ -1,0 +1,329 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+ }
+
+body
+{background-color: #f8fdfb;
+color:#222;
+line-height: 1.6;
+}
+/*hero section*/
+#hero
+{
+    background: linear-gradient(to right,#56ab2f,#a8e063);
+    color: white;
+    text-align: center;
+    padding: 80px,20px;
+}
+#hero
+h1
+{
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#hero
+p
+{
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+#hero
+.btn
+{
+    background: white;
+    color: #2e7d32;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+#hero
+.btn:hover
+{
+    background: #e6ffe9;
+}
+
+/*Section headings*/
+section h2
+{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #2e7d32;
+}
+
+/*Kpis Section*/
+#kpis
+{
+    text-align: center;
+    background: #eafbea;
+    padding: 30px 20px;
+}
+.kpisBox 
+p
+{
+    font-size: 1.1em;
+    margin: 8px 0;
+}
+
+/*why section*/
+#why
+{
+    padding: 30px 20px;
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+/*pledge form*/
+#pledgeForm
+{
+background: #f4fff7;
+padding: 40px 20px;
+border-top: 2px solid #a8e063;
+}
+form
+{
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+form label
+{
+    display:block;
+    margin:8px 03px;
+    font-weight: bold;
+}
+form input,form select
+{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form h3
+{
+    margin-top: 15px;
+    color:#2e7d32;
+}
+form button
+{
+    display:block;
+    width: 100%;
+    background: #56ab2f;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+form button:hover
+{
+    background: #3e8e41;
+}
+
+/*Certificate section*/
+#certificate
+{
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#certificateContent
+{
+    background: #fafff4;
+    border: 2px solid #56ab2f;
+    padding: 30px;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+/*pledge wall section*/
+#pledgeWall
+{
+    padding: 40px 20px;
+}
+
+table
+{
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+table th,table td
+{
+    border:1px solid #ccc ;
+    padding: 10px;
+    text-align: center;
+}
+table th
+{
+    background: #56ab2f;
+    color: white;
+}
+
+/*Privacy note*/
+#privacy
+{
+    background: #eafbea;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #333;
+}
+
+/*Resposive design*/
+@media(max-width:600px)
+{
+   #hero h1
+   {
+      font-size: 1.8em;
+   } 
+   form
+   {
+      width: 100%;
+   }
+   table
+   {
+      font-size:0.8em;
+   }
+}  
+.certificate-box {
+  width: 85%;
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 70px 80px;
+  text-align: center;
+  background: #fffdf5;
+  border: 20px solid #2e7d32;     
+  border-radius: 8px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
+  font-family: "Times New Roman", serif;
+  color: #333;
+  position: relative;
+}
+
+.certificate-box::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  right: 25px;
+  bottom: 25px;
+  border: 6px double #1b5e20;      /* darker inner green */
+  border-radius: 5px;
+  pointer-events: none;
+}
+
+.certificate-box h1 {
+  font-size: 2.8rem;
+  color: #1b5e20;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.certificate-box h3 {
+  font-size: 1.6rem;
+  color: #388e3c;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.certificate-box h2 {
+  font-size: 2.3rem;
+  color: #1b5e20;
+  margin: 25px 0 10px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.certificate-box p {
+  font-size: 1.3rem;
+  margin: 10px auto;
+  width: 80%;
+  line-height: 1.7;
+}
+
+/* Footer aligned left-right */
+.certificate-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  padding: 0 60px;
+  text-align: center;
+}
+
+.certificate-footer div {
+  text-align: center;
+}
+
+.certificate-footer hr {
+  width: 250px;
+  border: none;
+  border-top: 2px solid #2e7d32;
+  margin-bottom: 6px;
+}
+
+.left-footer {
+  text-align: left;
+}
+
+.right-footer {
+  text-align: right;
+}
+
+}
+/* ✅ Green Star Section Styling */
+.stars {
+  font-size: 1.6rem;
+  color: #2e7d32 !important;   /* deep green */
+  margin: 20px 0 40px;
+  letter-spacing: 5px;
+  text-shadow: 0 0 6px rgba(46, 125, 50, 0.4); /* optional glow */
+}
+
+
+
+
+/* Download button */
+#downloadCert {
+  margin-top: 45px;
+  background: linear-gradient(90deg, #2e7d32, #4caf50);
+  color: #fff;
+  padding: 14px 32px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  font-weight: 500;
+}
+
+#downloadCert:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+
+
+
+
+
